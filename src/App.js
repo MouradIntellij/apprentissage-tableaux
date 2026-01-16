@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { ChevronRight, Code, BookOpen, Play, CheckCircle, Circle } from 'lucide-react';
+import { Code, BookOpen, Play } from 'lucide-react';
 
 const ArrayLearningPlatform = () => {
   const [selectedOperation, setSelectedOperation] = useState('display');
   const [showCode, setShowCode] = useState(true);
   const [showPseudo, setShowPseudo] = useState(true);
   const [activeTab, setActiveTab] = useState('theory');
-  const [visualArray, setVisualArray] = useState([5, 3, 8, 1, 9]);
+  const [visualArray] = useState([5, 3, 8, 1, 9]);
   const [highlightIndex, setHighlightIndex] = useState(null);
 
   const operations = {
